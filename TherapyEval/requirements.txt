@@ -1,0 +1,5 @@
+gradio==4.44.1
+openai>=1.30.0
+anthropic>=0.34.0
+pandas==2.2.3
+pydantic==2.10.6
