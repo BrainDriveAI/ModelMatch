@@ -93,6 +93,7 @@ email-eval/
 - Open issues for bugs or documentation gaps.
 - When changing scoring, update `Docs/Metrics.md` and cite sources in `Docs/Research.md`.
 - Keep outputs backward‑compatible (`Docs/Results.md`).
+- Join [BrainDrive Community](https://community.braindrive.ai) to share results.
 
 ### Outputs
 - Scores tab: metric-wise scores (0–10) and weighted total
@@ -101,52 +102,6 @@ email-eval/
 - Downloads: CSV and ZIP (CSV + JSON)
 
 See `Docs/Results.md` for JSON fields and CSV layout.
-
-### Sample Output (JSON) 🎯
-The Python API returns a dict like below (truncated example):
-```json
-{
-  "class": "internal_request",
-  "scores": {
-    "clarity": 8.5,
-    "length": 7.8,
-    "spam_score": 9.2,
-    "personalization": 6.5,
-    "tone": 8.9,
-    "grammatical_hygiene": 9.6
-  },
-  "weighted_total": 8.42,
-  "explanations": {
-    "clarity": ["ask_signals=2", "subject_useful=True", "intro_clear=True"],
-    "length": ["subject_len=42", "body_wc=96", "class=internal_request"],
-    "spam_score": [],
-    "personalization": ["cues=1", "relevant=1"],
-    "tone": ["greeting", "signoff"],
-    "grammatical_hygiene": []
-  },
-  "comments": {
-    "clarity": "Clear ask and concise intro; subject is informative.",
-    "length": "Length is within the ideal band for this email class.",
-    "spam_score": "No spammy phrasing detected; formatting looks safe.",
-    "personalization": "Personalization is relevant and well‑balanced.",
-    "tone": "Tone is professional with appropriate greeting/sign‑off.",
-    "grammatical_hygiene": "Grammar looks clean; no obvious issues."
-  },
-  "usage": {"openai_total": 950, "claude_total": 0, "total": 950},
-  "meta": {
-    "engine": "openai",
-    "weights": {
-      "clarity": 1.15,
-      "length": 0.96,
-      "spam_score": 1.09,
-      "personalization": 0.96,
-      "tone": 0.96,
-      "grammatical_hygiene": 0.89
-    },
-    "version": "2.3"
-  }
-}
-```
 
 ### Research References
 This tool’s metric design and defaults are grounded in published findings on clarity, concise length ranges, spam triggers, personalization efficacy, tone, and grammar perception. A curated synthesis is provided in `Docs/Research.md`.
