@@ -37,7 +37,7 @@ For detailed math, bands, and rule lists, see `Docs/Metrics.md` and `Docs/Resear
 
 ### Installation 🔧
 ```bash
-python3 -m venv .venv && source .venv/bin/activate
+cd EmailEval
 pip install -r requirements.txt
 ```
 
