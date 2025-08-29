@@ -1,0 +1,8 @@
+gradio>=4.44.0
+regex>=2023.12.25
+beautifulsoup4>=4.12.3
+pyspellchecker>=0.8.1
+openai>=1.40.0         # for OpenAI mode
+anthropic>=0.34.0      # for Claude mode
+orjson>=3.10.7
+python-dotenv>=1.0.1   # optional .env loading for local keys
