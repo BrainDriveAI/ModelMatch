@@ -46,13 +46,37 @@ cd FinanceEval
 pip install -r requirements.txt
 ```
 
+---
+
+## Environment Variables (API Keys)
+
+FinanceEval can use LLM assistance from **OpenAI** or **Anthropic**.  
+Set your keys before running the app:
+
+### macOS / Linux (bash/zsh)
+
+```bash
+export OPENAI_API_KEY="your_openai_key_here"
+export ANTHROPIC_API_KEY="your_anthropic_key_here"
+```
+
+### Windows (PowerShell)
+
+```powershell
+setx OPENAI_API_KEY "your_openai_key_here"
+setx ANTHROPIC_API_KEY "your_anthropic_key_here"
+```
+
+
 ## Run Locally
 
 ```bash
 python3 app.py
 ```
 
-The app starts on http://localhost:7860 by default.
+The app starts on [http://localhost:7860](http://localhost:7860) by default.
+
+---
 
 ## Project Structure
 
@@ -98,15 +122,21 @@ Inputs are processed in-memory. LLM usage requires API keys set via environment 
 - Missing output: Check LLM API connectivity.
 - Low scores: Review metric definitions in the document.
 
-## Contributing
-
-Open issues for bugs or enhancements. Update documentation and cite sources when modifying metrics.
-
 ## Outputs
 
-- JSON with metric scores, flags, evidence, and reasoning.
-- Detailed evaluation per sub-domain.
+- JSON with metric scores and reasoning.
+- Detailed evaluation per metric.
 
-## Research References
+## Research and Documentation
 
-Metrics are based on findings from papers. See the document for full references.
+For detailed knowledge about the FinanceEval evaluation framework, metric design, research grounding, and reporting outputs, please refer to the Docs folder:
+
+👉 [FinanceEval Docs on GitHub](https://github.com/BrainDriveAI/ModelMatch/tree/main/FinanceEval/Docs)
+
+The Docs include:
+- **Metrics.md** — exact scoring math, rules, and guardrails for each metric.  
+- **Research.md** — synthesis of academic and industry sources applied metric-wise.  
+- **Results.md** — output schema, JSON/CSV formats, and leaderboard reporting examples.  
+
+
+
