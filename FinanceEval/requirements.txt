@@ -1,0 +1,11 @@
+gradio>=4.44.0
+pandas>=2.2.0
+numpy>=1.26.4
+regex>=2024.5.10
+openai>=1.40.0
+anthropic>=0.34.0
+sentence-transformers>=3.0.1
+scikit-learn>=1.4.0
+textstat>=0.7.4
+python-dotenv>=1.0.1
+tiktoken>=0.7.0

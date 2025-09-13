@@ -1,0 +1,16 @@
+{
+"meta": {
+"version": "1.0",
+"eval_time_utc": "",
+"input_tokens": 0,
+"output_tokens": 0
+},
+"metrics": {
+"trust": { "score": 1, "flags": [], "evidence": "", "reason": "" },
+"accuracy": { "score": 1, "calc_errors": [], "plausibility_flags": [], "reason": "" },
+"explain": { "score": 1, "steps": [], "assumptions": [], "reason": "" },
+"client_first": { "score": 1, "personalization": [], "conflict_flags": [], "reason": "" },
+"risk_safety": { "score": 1, "bias_flags": [], "risk_disclosures": [], "diversification": false, "reason": "" },
+"clarity": { "score": 1, "jargon": [], "plain_explanations": [], "reason": "" }
+}
+}
