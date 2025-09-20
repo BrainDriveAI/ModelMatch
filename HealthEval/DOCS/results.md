@@ -2,12 +2,13 @@
 
 Below are the top 5 models evaluated using the HealthEval framework. Each model was scored across 6 key metrics, with the total score reflecting overall performance as a health advisor.
 
-| Model Name      | HuggingFace Link                | Evidence | Clinical | Empathy | Clarity | Plan | Trust | Total |
-|-----------------|---------------------------------|----------|----------|---------|---------|------|-------|-------|
-| Qwen-UMLS       | [HF](https://huggingface.co/Qwen-UMLS)         | 6        | 7.5      | 8       | 8       | 7    | 8.25  | 7.445 |
-| Phi-3 Mini      | [HF](https://huggingface.co/Phi-3-mini)        | 7.5      | 7.5      | 8       | 8       | 5    | 8.25  | 7.435 |
-| Llama3-Med      | [HF](https://huggingface.co/Llama3-Med)        | 7.5      | 7.5      | 8       | 8       | 3.5  | 8     | 7.18  |
-| Mistral-NeM     | [HF](https://huggingface.co/Mistral-NeM)       | 7.5      | 7        | 8       | 8       | 4    | 8     | 7.15  |
+| Model Name                     | HuggingFace Link                                                                 | Evidence | Clinical | Empathy | Clarity | Plan | Trust | Total |
+|--------------------------------|----------------------------------------------------------------------------------|----------|----------|---------|---------|------|-------|-------|
+| Qwen-UMLS-7B-Instruct          | [HF](https://huggingface.co/prithivMLmods/Qwen-UMLS-7B-Instruct)                 | 6.0      | 7.5      | 8.0     | 8.0     | 7.0  | 8.25  | 7.445 |
+| Phi-3 Mini                     | [HF](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct)                    | 7.5      | 7.5      | 8.0     | 8.0     | 5.0  | 8.25  | 7.435 |
+| Llama3-Med42-8B                | [HF](https://huggingface.co/m42-health/Llama3-Med42-8B)                          | 7.5      | 7.5      | 8.0     | 8.0     | 3.5  | 8.0   | 7.180 |
+| Mistral-NeMo-Minitron-8B-Instruct | [HF](https://huggingface.co/nvidia/Mistral-NeMo-Minitron-8B-Instruct)            | 7.5      | 7.0      | 8.0     | 8.0     | 4.0  | 8.0   | 7.150 |
+| DeepSeek V2 Lite Chat          | [HF](https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat)                   | 6.5      | 6.5      | 8.0     | 8.0     | 5.5  | 8.25  | 7.125 |
 
 ---
 
@@ -24,3 +25,4 @@ Below are the top 5 models evaluated using the HealthEval framework. Each model 
 ---
 
 *For details on metric definitions, see [metrics.md](metrics.md). For research background, see [research.md](research.md).*
+
