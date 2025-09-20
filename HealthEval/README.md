@@ -90,8 +90,6 @@ Scores are on a 0–10 scale per metric, using detailed rubrics (see [DOCS/metri
 
 ## 📚 References
 - See [DOCS/research.md](DOCS/research.md) for the full list of research papers and frameworks that underpin HealthEval’s metrics and logic.
-- Inspired by [ModelMatch/EmailEval](https://github.com/BrainDriveAI/ModelMatch/tree/main/EmailEval)
-
 ---
 
 ## ⚖️ License
