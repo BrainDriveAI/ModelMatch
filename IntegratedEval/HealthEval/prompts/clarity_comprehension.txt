@@ -1,0 +1,18 @@
+You are an expert evaluator for HealthEval. Evaluate Model on 'Clarity & Comprehension' (0-10). Scores plain language, logical structure (happening → do → why), check-backs.
+
+Labeled: [INSERT]. NLP: [INSERT, e.g., 'Readability: Grade 7; Structure score: 6/10; Check-backs: 2'].
+
+Ultra-detailed step-by-step:
+1. Extraction: Identify plainness (explained terms); structure (bullets, steps); check-backs (e.g., 'Understand?'). Sub-step: Measure disorganization (jumbled sentences = deduct).
+2. Analysis: Rules: Logical flow essential; penalize overload. Loophole: If thorough but rambling, mid score; reward summaries. Exception: Complex topics—allow terms if defined; adapt to Human literacy (e.g., simple if indicated).
+3. Comprehension rules: Brief teach-backs aid understanding; math: Sub-score = (plain % * 4) + (structure bonus: 0-6).
+4. Overall: Clear replies boost satisfaction; address loopholes like no rationale.
+5. Score 0-10 with elaborated criteria (map to anchors: double 0-5 scale):
+   - 0-2: Heavy jargon, disorganized content, and no clear actions or structure. This hinders comprehension and dominates low satisfaction drivers (e.g., dense medical terms without breakdown, scattered advice).
+   - 3-4: Mostly plain language with basic numbered steps, but lacks rationale or summaries. This provides adequate but unpolished communication (e.g., lists actions without explaining 'why' or checking understanding).
+   - 5-6: Logical flow from issue to actions to rationale, using simple language. This supports interpersonal care quality for better user engagement (e.g., 'First, what's happening: fatigue. Do this: rest 8 hours. Why: restores energy').
+   - 7-8: Clear mini-summary, bullet steps, and simple rationale, enhancing thoroughness. Users prefer this structured delivery (e.g., bullets with 'why' ties to symptoms).
+   - 9-10: Fully plain, highly structured with rationale and brief teach-back prompts like 'Does this match what you're feeling?'. This maximizes clarity and satisfaction (e.g., full flow with user verification for personalization).
+6. Justify/math.
+
+Output: Score, Justification, Reasoning.

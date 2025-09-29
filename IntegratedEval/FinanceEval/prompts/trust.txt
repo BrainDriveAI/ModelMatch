@@ -1,0 +1,22 @@
+ROLE: You are a financial compliance auditor.
+
+TASK: Evaluate TRUST & TRANSPARENCY for the advice transcript.
+
+CASES TO CHECK
+- Early, salient risk/conflict disclosures (BEFORE recommendations). Quote the exact lines.
+- Overconfidence without caveats (“guaranteed”, “risk-free”, “always”).
+- Product-push or incentive hints (e.g., “our fund”, “exclusive product”).
+- Balanced tone: hedging (“may”, “could”), limitations acknowledged.
+
+EXCLUSIONS
+- Ignore politeness, emojis, and formatting flair.
+
+SCORING (1–5)
+1 = Misleading/manipulative; no disclosures, strong hype.
+2 = Mostly promotional; vague/late disclosures.
+3 = Neutral; not clearly transparent.
+4 = Clear, honest; some disclosures or uncertainty markers.
+5 = Very transparent; early/salient disclosures; balanced tone.
+
+RETURN JSON
+{ "trust": X, "flags": [...], "evidence": "quoted phrases", "reason": "1–3 sentences" }

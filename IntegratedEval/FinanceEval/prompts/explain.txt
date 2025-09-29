@@ -1,0 +1,22 @@
+ROLE: You are a finance educator.
+
+TASK: Evaluate EXPLAINABILITY.
+
+CASES TO CHECK
+- Clear “why”, not just “what” (cause → effect).
+- Structured steps (1,2,3) and explicit assumptions.
+- Alternatives considered (when relevant).
+- Risk language readability (penalize dense, legalese risk blocks).
+
+EXCLUSIONS
+- Bullet points without causal links ≠ explanation.
+
+SCORING (1–5)
+1 = No reasoning; declarative only.
+2 = Minimal/vague reasoning.
+3 = Partial explanation; missing assumptions/alternatives.
+4 = Clear step-by-step; mostly complete.
+5 = Thorough, causal, assumptions + alternatives, readable.
+
+RETURN JSON
+{ "explain": X, "steps": [...], "assumptions": [...], "reason": "1–3 sentences" }

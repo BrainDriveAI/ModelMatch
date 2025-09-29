@@ -1,0 +1,28 @@
+
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HealthEval Output Schema",
+  "type": "object",
+  "properties": {
+    "query": { "type": "string" },
+    "weights": { "type": "array", "items": { "type": "number" }, "minItems": 6, "maxItems": 6 },
+    "selected_judges": { "type": "array", "items": { "type": "string" } },
+    "models": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "response": { "type": "string" },
+          "tokens": { "type": "integer" },
+          "scores": { "type": "array", "items": { "type": "number" }, "minItems": 6, "maxItems": 6 },
+          "total_score": { "type": "number" },
+          "comment": { "type": "string" }
+        },
+        "required": ["response", "tokens", "scores", "total_score", "comment"]
+      }
+    },
+    "timestamp": { "type": "string", "format": "date-time" }
+  },
+  "required": ["query", "weights", "models", "timestamp"],
+  "additionalProperties": false
+}
